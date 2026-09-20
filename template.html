@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<title>streams — kryl</title>
+<link rel="icon" href="favicon.png">
+<style>
+@font-face { font-family: 'JetBrains Mono'; font-weight: 400; font-display: swap; src: url(fonts/JetBrainsMono-Regular.ttf) format('truetype'); }
+@font-face { font-family: 'JetBrains Mono'; font-weight: 700; font-display: swap; src: url(fonts/JetBrainsMono-Bold.ttf) format('truetype'); }
+@font-face { font-family: 'JetBrains Mono'; font-weight: 800; font-display: swap; src: url(fonts/JetBrainsMono-ExtraBold.ttf) format('truetype'); }
+
+/* kryl.dev brand tokens — ~/personal/kryl/theme.css */
+:root {
+  --kryl-bg: #0f1014;
+  --kryl-surface: #08090c;
+  --kryl-fg: #e8e6e0;
+  --kryl-accent: #f5b841;
+  --kryl-muted: #7e7f8a;
+  --kryl-border: #2c2d36;
+  --kryl-font: 'JetBrains Mono', 'Courier New', monospace;
+}
+* { box-sizing: border-box; }
+html { background: var(--kryl-bg); }
+body {
+  margin: 0 auto; padding: 48px 16px 80px; max-width: 920px;
+  background: var(--kryl-bg); color: var(--kryl-fg);
+  font: 400 14px/1.6 var(--kryl-font);
+}
+a { color: inherit; text-decoration: none; }
+a:focus-visible, input:focus-visible, button:focus-visible { outline: 2px solid var(--kryl-accent); outline-offset: 2px; }
+
+header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.kryl-wordmark { font-weight: 800; font-size: 32px; letter-spacing: -0.05em; display: inline-flex; align-items: baseline; }
+.kryl-wordmark .path { color: var(--kryl-muted); }
+.kryl-wordmark i { display: inline-block; width: 0.42em; height: 0.78em; margin-left: 0.2em; background: var(--kryl-accent); }
+.meta { color: var(--kryl-muted); font-size: 12px; }
+
+.bar { position: sticky; top: 0; z-index: 1; display: flex; gap: 8px; margin: 24px 0 8px; padding: 12px 0; background: var(--kryl-bg); border-bottom: 1px solid var(--kryl-border); }
+.bar input {
+  flex: 1; min-width: 0; padding: 10px 12px; font: inherit; color: var(--kryl-fg);
+  background: var(--kryl-surface); border: 1px solid var(--kryl-border); border-radius: 4px;
+}
+.bar input::placeholder { color: var(--kryl-muted); }
+.bar button {
+  padding: 10px 14px; font: inherit; font-weight: 700; color: var(--kryl-muted); cursor: pointer;
+  background: var(--kryl-surface); border: 1px solid var(--kryl-border); border-radius: 4px;
+}
+.bar button[aria-pressed="true"] { color: var(--kryl-bg); background: var(--kryl-accent); border-color: var(--kryl-accent); }
+
+h2 { margin: 36px 0 8px; font-size: 14px; font-weight: 700; display: flex; align-items: baseline; gap: 0; }
+h2 .prompt { color: var(--kryl-muted); }
+h2 .count { margin-left: 10px; color: var(--kryl-muted); font-weight: 400; font-size: 12px; }
+
+ol { list-style: none; margin: 0; padding: 0; counter-reset: row; }
+li {
+  counter-increment: row; display: grid; grid-template-columns: 28px 1fr auto; gap: 4px 12px; align-items: baseline;
+  padding: 10px 8px; border-bottom: 1px solid var(--kryl-border);
+}
+li::before { content: counter(row, decimal-leading-zero); color: var(--kryl-muted); font-size: 12px; }
+li:hover { background: var(--kryl-surface); }
+li[hidden], section[hidden] { display: none; }
+
+.sites { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; min-width: 0; }
+.site { display: inline-flex; align-items: baseline; gap: 6px; }
+.name { border-bottom: 1px solid transparent; }
+.name.primary { font-weight: 700; }
+.name:hover { border-bottom-color: var(--kryl-accent); }
+.or { color: var(--kryl-muted); font-size: 12px; }
+.mirror {
+  min-width: 20px; padding: 0 5px; text-align: center; font-size: 11px; line-height: 18px; color: var(--kryl-muted);
+  border: 1px solid var(--kryl-border); border-radius: 3px;
+}
+.mirror:hover { color: var(--kryl-fg); border-color: var(--kryl-muted); }
+
+.tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; font-size: 11px; color: var(--kryl-muted); }
+.tag.hot { color: var(--kryl-fg); font-weight: 700; }
+.tag + .tag::before { content: "·"; margin-right: 6px; color: var(--kryl-border); }
+
+.empty { margin: 48px 0; color: var(--kryl-muted); }
+footer { margin-top: 56px; color: var(--kryl-muted); font-size: 12px; }
+
+@media (max-width: 640px) {
+  body { padding-top: 28px; }
+  li { grid-template-columns: 28px 1fr; }
+  .tags { grid-column: 2; justify-content: flex-start; }
+}
+</style>
+</head>
+<body>
+<header>
+  <span class="kryl-wordmark"><span class="path">~/</span>streams<i></i></span>
+  <span class="meta">{{total}} stream aggregators · movies / tv / anime</span>
+</header>
+
+<div class="bar">
+  <input id="q" type="search" placeholder="filter by name or tag…" autocomplete="off" aria-label="Filter sites">
+  <button id="k4" type="button" aria-pressed="false">4K</button>
+</div>
+
+<main>
+{{sections}}
+<p class="empty" id="empty" hidden>no match.</p>
+</main>
+
+<footer>Use an adblocker (uBlock Origin). Numbered boxes are mirrors of the site before them.</footer>
+
+<script>
+(function () {
+  var q = document.getElementById('q'), k4 = document.getElementById('k4');
+  var rows = [].slice.call(document.querySelectorAll('li[data-search]'));
+  var sections = [].slice.call(document.querySelectorAll('section'));
+  function apply() {
+    var term = q.value.trim().toLowerCase(), only4k = k4.getAttribute('aria-pressed') === 'true', shown = 0;
+    rows.forEach(function (li) {
+      var s = li.getAttribute('data-search');
+      var ok = s.indexOf(term) !== -1 && (!only4k || / 4k( |$)/.test(s));
+      li.hidden = !ok;
+      if (ok) shown++;
+    });
+    sections.forEach(function (sec) { sec.hidden = !sec.querySelector('li:not([hidden])'); });
+    document.getElementById('empty').hidden = shown !== 0;
+  }
+  q.addEventListener('input', apply);
+  k4.addEventListener('click', function () {
+    k4.setAttribute('aria-pressed', k4.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+    apply();
+  });
+  document.querySelectorAll('main a').forEach(function (a) { a.target = '_blank'; a.rel = 'noopener noreferrer'; });
+})();
+</script>
+</body>
+</html>
