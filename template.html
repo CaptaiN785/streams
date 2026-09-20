@@ -39,17 +39,18 @@ header { display: flex; align-items: baseline; justify-content: space-between; g
 .kryl-wordmark i { display: inline-block; width: 0.42em; height: 0.78em; margin-left: 0.2em; background: var(--kryl-accent); }
 .meta { color: var(--kryl-muted); font-size: 12px; }
 
-.bar { position: sticky; top: 0; z-index: 1; display: flex; gap: 8px; margin: 24px 0 8px; padding: 12px 0; background: var(--kryl-bg); border-bottom: 1px solid var(--kryl-border); }
+.bar { position: sticky; top: 0; z-index: 1; display: flex; gap: 8px; margin: 24px 0 0; padding: 12px 0; background: var(--kryl-bg); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; padding-bottom: 12px; border-bottom: 1px solid var(--kryl-border); }
 .bar input {
   flex: 1; min-width: 0; padding: 10px 12px; font: inherit; color: var(--kryl-fg);
   background: var(--kryl-surface); border: 1px solid var(--kryl-border); border-radius: 4px;
 }
 .bar input::placeholder { color: var(--kryl-muted); }
-.bar button {
-  padding: 10px 14px; font: inherit; font-weight: 700; color: var(--kryl-muted); cursor: pointer;
+.chips button {
+  padding: 6px 12px; font: inherit; font-weight: 700; color: var(--kryl-muted); cursor: pointer;
   background: var(--kryl-surface); border: 1px solid var(--kryl-border); border-radius: 4px;
 }
-.bar button[aria-pressed="true"] { color: var(--kryl-bg); background: var(--kryl-accent); border-color: var(--kryl-accent); }
+.chips button[aria-pressed="true"] { color: var(--kryl-bg); background: var(--kryl-accent); border-color: var(--kryl-accent); }
 
 h2 { margin: 36px 0 8px; font-size: 14px; font-weight: 700; display: flex; align-items: baseline; gap: 0; }
 h2 .prompt { color: var(--kryl-muted); }
@@ -98,7 +99,12 @@ footer { margin-top: 56px; color: var(--kryl-muted); font-size: 12px; }
 
 <div class="bar">
   <input id="q" type="search" placeholder="filter by name or tag…" autocomplete="off" aria-label="Filter sites">
-  <button id="k4" type="button" aria-pressed="false">4K</button>
+</div>
+<div class="chips" role="group" aria-label="Filter by type">
+  <button type="button" data-tag="movies" aria-pressed="false">Movies</button>
+  <button type="button" data-tag="tv" aria-pressed="false">Series</button>
+  <button type="button" data-tag="anime" aria-pressed="false">Anime</button>
+  <button type="button" data-tag="4k" aria-pressed="false">4K</button>
 </div>
 
 <main>
@@ -110,24 +116,34 @@ footer { margin-top: 56px; color: var(--kryl-muted); font-size: 12px; }
 
 <script>
 (function () {
-  var q = document.getElementById('q'), k4 = document.getElementById('k4');
+  var q = document.getElementById('q');
+  var chips = [].slice.call(document.querySelectorAll('.chips button'));
   var rows = [].slice.call(document.querySelectorAll('li[data-search]'));
   var sections = [].slice.call(document.querySelectorAll('section'));
   function apply() {
-    var term = q.value.trim().toLowerCase(), only4k = k4.getAttribute('aria-pressed') === 'true', shown = 0;
+    var term = q.value.trim().toLowerCase(), shown = 0;
+    var wanted = chips.filter(function (b) { return b.getAttribute('aria-pressed') === 'true'; })
+      .map(function (b) { return b.getAttribute('data-tag'); });
     rows.forEach(function (li) {
-      var s = li.getAttribute('data-search');
-      var ok = s.indexOf(term) !== -1 && (!only4k || / 4k( |$)/.test(s));
+      var tags = li.getAttribute('data-tags').split('|');
+      var ok = li.getAttribute('data-search').indexOf(term) !== -1 &&
+        wanted.every(function (t) { return tags.indexOf(t) !== -1; });
       li.hidden = !ok;
       if (ok) shown++;
     });
-    sections.forEach(function (sec) { sec.hidden = !sec.querySelector('li:not([hidden])'); });
+    sections.forEach(function (sec) {
+      var n = sec.querySelectorAll('li:not([hidden])').length;
+      sec.hidden = n === 0;
+      sec.querySelector('.count').textContent = n;
+    });
     document.getElementById('empty').hidden = shown !== 0;
   }
   q.addEventListener('input', apply);
-  k4.addEventListener('click', function () {
-    k4.setAttribute('aria-pressed', k4.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
-    apply();
+  chips.forEach(function (b) {
+    b.addEventListener('click', function () {
+      b.setAttribute('aria-pressed', b.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+      apply();
+    });
   });
   document.querySelectorAll('main a').forEach(function (a) { a.target = '_blank'; a.rel = 'noopener noreferrer'; });
 })();

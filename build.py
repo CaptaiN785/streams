@@ -61,7 +61,7 @@ def render_row(entry):
     )
     search = " ".join([s["name"] for s in entry["sites"]] + entry["tags"]).lower()
     return (
-        f'<li data-search="{e(search)}"><div class="sites">'
+        f'<li data-search="{e(search)}" data-tags="{e("|".join(entry["tags"]).lower())}"><div class="sites">'
         + '<span class="or">or</span>'.join(parts)
         + f'</div><div class="tags">{tags}</div></li>'
     )
