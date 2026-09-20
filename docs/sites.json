@@ -1,0 +1,1238 @@
+[
+  {
+    "tier": "top",
+    "sites": [
+      {
+        "name": "Cinejoy",
+        "url": "https://cinejoy.pk/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "top",
+    "sites": [
+      {
+        "name": "Movy",
+        "url": "https://www.movy.sx/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "top",
+    "sites": [
+      {
+        "name": "PopcornMovies",
+        "url": "https://popcornmovies.ac/",
+        "mirrors": []
+      },
+      {
+        "name": "BingeBox",
+        "url": "https://bingebox.ac/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "top",
+    "sites": [
+      {
+        "name": "Rive",
+        "url": "https://www.rivestream.app/",
+        "mirrors": [
+          "https://rivestream.ru/"
+        ]
+      },
+      {
+        "name": "CorsFlix",
+        "url": "https://watch.corsflix.net",
+        "mirrors": [
+          "https://corsflix.net",
+          "https://watch.corsflix.dpdns.org"
+        ]
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next",
+      "4K"
+    ]
+  },
+  {
+    "tier": "top",
+    "sites": [
+      {
+        "name": "Flixer",
+        "url": "https://flixer.gd",
+        "mirrors": [
+          "https://flixer.su/",
+          "https://flixer.cx/"
+        ]
+      },
+      {
+        "name": "Hexa",
+        "url": "https://hexa.su/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "top",
+    "sites": [
+      {
+        "name": "bCine",
+        "url": "https://bcine.ru/",
+        "mirrors": []
+      },
+      {
+        "name": "Bingey",
+        "url": "https://www.bingey.cfd/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "top",
+    "sites": [
+      {
+        "name": "67Movies",
+        "url": "https://67movies.st/",
+        "mirrors": []
+      },
+      {
+        "name": "PhantomFlix",
+        "url": "https://phantomflix.net/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next",
+      "4K"
+    ]
+  },
+  {
+    "tier": "top",
+    "sites": [
+      {
+        "name": "7Movies",
+        "url": "https://7movies.ac/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "good",
+    "sites": [
+      {
+        "name": "ShuttleTV",
+        "url": "https://shuttletv.su/",
+        "mirrors": [
+          "https://shuttletv.pk/",
+          "https://shuttletv.me/"
+        ]
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "good",
+    "sites": [
+      {
+        "name": "Stellar",
+        "url": "https://stellar.gdn/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next",
+      "4K"
+    ]
+  },
+  {
+    "tier": "good",
+    "sites": [
+      {
+        "name": "Vivarium",
+        "url": "https://vivarium.wtf/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "good",
+    "sites": [
+      {
+        "name": "MeowTV",
+        "url": "https://meowtv.ru/",
+        "mirrors": []
+      },
+      {
+        "name": "FlickyStream",
+        "url": "https://flickystream.mov/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "good",
+    "sites": [
+      {
+        "name": "Reelix",
+        "url": "https://reelix.ac/",
+        "mirrors": []
+      },
+      {
+        "name": "Coreflix",
+        "url": "https://coreflix.tv/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "good",
+    "sites": [
+      {
+        "name": "ArrowTV",
+        "url": "https://arrowtv.net/",
+        "mirrors": [
+          "https://neonflix.st/"
+        ]
+      },
+      {
+        "name": "Cinezo",
+        "url": "https://www.cinezo.org/",
+        "mirrors": [
+          "https://www.flikhub.net/"
+        ]
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "good",
+    "sites": [
+      {
+        "name": "Way2Movies",
+        "url": "https://beta.way2movies.live/",
+        "mirrors": [
+          "https://way2movies.live/"
+        ]
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "4K"
+    ]
+  },
+  {
+    "tier": "good",
+    "sites": [
+      {
+        "name": "Streamo",
+        "url": "https://streamo.pro/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "good",
+    "sites": [
+      {
+        "name": "Movie Night",
+        "url": "https://movienig.ht/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "good",
+    "sites": [
+      {
+        "name": "Chillflix",
+        "url": "https://chillflix.lol/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "good",
+    "sites": [
+      {
+        "name": "Moovie",
+        "url": "https://moovie.fun/",
+        "mirrors": []
+      },
+      {
+        "name": "StreamAggregator",
+        "url": "https://streamaggregator.in/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "good",
+    "sites": [
+      {
+        "name": "SpenFlix",
+        "url": "https://watch.spencerdevs.xyz/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Cinema (BZ)",
+        "url": "https://cinema.army/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "MovieBite",
+        "url": "https://moviebite.org/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "TonkaCine",
+        "url": "https://tonkacine.watch/",
+        "mirrors": [
+          "https://multi.tonkacine.watch/"
+        ]
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Cinetaro",
+        "url": "https://cinetaro.to/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "CinemaOS",
+        "url": "https://cinemaos.live/",
+        "mirrors": [
+          "https://cinemaos.tech/",
+          "https://cinemaos.me/"
+        ]
+      },
+      {
+        "name": "NoirX",
+        "url": "https://noirx.me/",
+        "mirrors": [
+          "https://noirx.live/"
+        ]
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Spacedom",
+        "url": "https://spacedom.live/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Zenox",
+        "url": "https://zenox.lol/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Vuflix",
+        "url": "https://vuflix.co/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "OpStream",
+        "url": "https://opstream.fun/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Nippleflix",
+        "url": "https://nippleflix.com/",
+        "mirrors": []
+      },
+      {
+        "name": "Redflix",
+        "url": "https://redflix.one/",
+        "mirrors": [
+          "https://redflix.club/"
+        ]
+      },
+      {
+        "name": "PantyFlix",
+        "url": "https://pantyflix.com/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Movish",
+        "url": "https://movish.to/",
+        "mirrors": []
+      },
+      {
+        "name": "LatestMovies",
+        "url": "https://latestmovies.net/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "VidPlay",
+        "url": "https://vidplay.to/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Moonflix",
+        "url": "https://moonflix.website/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Cinegram",
+        "url": "https://cinegram.tv/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "SvStream",
+        "url": "https://svstream.cc/",
+        "mirrors": [
+          "https://nomorflix.cc/",
+          "https://diostream.cc/"
+        ]
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Willow",
+        "url": "https://willow.arlen.icu/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "HiveX",
+        "url": "https://hivex.stream/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Cinemove",
+        "url": "https://cinemove.cc/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Lightflix",
+        "url": "https://lightflix.app/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Boomflix",
+        "url": "https://boomflix.qzz.io/",
+        "mirrors": [
+          "https://boomflix.pages.dev/"
+        ]
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "FlyStream",
+        "url": "https://flystream.net/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next",
+      "4K"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Overlook",
+        "url": "https://overlook.cx/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Stigstream",
+        "url": "https://stigstream.ru/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Cineapse",
+        "url": "https://www.cineapse.net/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next",
+      "4K"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Bingr",
+        "url": "https://bingr.one/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "BingeBang",
+        "url": "https://bingebang.tv/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "FRAME",
+        "url": "https://www.framemovie.online/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Stellar (rip)",
+        "url": "https://stellar.rip/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "All You Can Watch",
+        "url": "https://allyoucanwatch.net/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "3eyedraven",
+        "url": "https://3eyedraven.watch/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Flixtrz",
+        "url": "https://flixtrz.com/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "ZXCSTREAM",
+        "url": "https://zxcprime.icu/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Cineby (gdn)",
+        "url": "https://cineby.gdn/",
+        "mirrors": []
+      },
+      {
+        "name": "FMovies",
+        "url": "https://ffmovies.org/",
+        "mirrors": [
+          "https://fstream.app/",
+          "https://smovies.co/"
+        ]
+      },
+      {
+        "name": "CineFlix",
+        "url": "https://cineflixd.fstream.app/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Watchott",
+        "url": "https://watchott.org/",
+        "mirrors": []
+      },
+      {
+        "name": "EmnexMovies",
+        "url": "https://emnexmovies.tech/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Mapple",
+        "url": "https://mapple.fun/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Smashystream",
+        "url": "https://smashystream.xyz/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "NOVERA",
+        "url": "https://novera.tv/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "NOVA",
+        "url": "https://novahd.cc/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "NetPlay",
+        "url": "https://netplayz.icu/",
+        "mirrors": []
+      },
+      {
+        "name": "Cinelove",
+        "url": "https://cinelove.live/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Screenscape",
+        "url": "https://screenscape.me/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Kofi",
+        "url": "https://kofi.mov/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "PopcornTime",
+        "url": "https://popwatch.to/",
+        "mirrors": [
+          "https://popwatch.cc/"
+        ]
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Surface Stream",
+        "url": "https://watchsurface.stream/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "frameXTV",
+        "url": "https://framextv.tech/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Apexmovies",
+        "url": "https://apexmovies.net/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Avero TV",
+        "url": "https://averotv.top/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime",
+      "Auto-Next"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "StreamVaults",
+        "url": "https://streamvaults.ru/",
+        "mirrors": []
+      },
+      {
+        "name": "ReelStream",
+        "url": "https://rreelstream.live/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "GaiaFlix",
+        "url": "https://gaiaflix.live/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Nxsha",
+        "url": "https://web.nxsha.app/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime"
+    ]
+  },
+  {
+    "tier": "rest",
+    "sites": [
+      {
+        "name": "Vegeta TV",
+        "url": "http://vegetatv.duckdns.org/",
+        "mirrors": []
+      }
+    ],
+    "tags": [
+      "Movies",
+      "TV",
+      "Anime"
+    ]
+  }
+]
