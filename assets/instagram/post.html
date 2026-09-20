@@ -1,0 +1,94 @@
+<!doctype html>
+<!-- Instagram feed post, 1080x1350 (4:5). Render to post.png with headless Chrome:
+       chrome --headless=new --hide-scrollbars --force-device-scale-factor=1 --window-size=1080,1350 --screenshot=post.png post.html
+     Tokens and type are the page's own (docs/index.html). The panel shows what the live page shows
+     with the 4K chip pressed: the 4K rows of "top picks" and "recommended" in docs/sites.json (tags shortened). -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>streams — instagram post</title>
+<style>
+@font-face { font-family: 'JetBrains Mono'; font-weight: 400; src: url(../../docs/fonts/JetBrainsMono-Regular.ttf) format('truetype'); }
+@font-face { font-family: 'JetBrains Mono'; font-weight: 700; src: url(../../docs/fonts/JetBrainsMono-Bold.ttf) format('truetype'); }
+@font-face { font-family: 'JetBrains Mono'; font-weight: 800; src: url(../../docs/fonts/JetBrainsMono-ExtraBold.ttf) format('truetype'); }
+
+/* kryl.dev brand tokens — same values as docs/index.html */
+:root {
+  --kryl-bg: #0f1014;
+  --kryl-surface: #08090c;
+  --kryl-fg: #e8e6e0;
+  --kryl-accent: #f5b841;
+  --kryl-muted: #7e7f8a;
+  --kryl-border: #2c2d36;
+  --kryl-font: 'JetBrains Mono', 'Courier New', monospace;
+}
+* { box-sizing: border-box; margin: 0; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; background: var(--kryl-bg); }
+body {
+  display: flex; flex-direction: column; padding: 84px 80px 80px;
+  color: var(--kryl-fg); font: 400 26px/1.5 var(--kryl-font);
+}
+
+.wordmark { font-weight: 800; font-size: 54px; line-height: 1; letter-spacing: -0.05em; display: inline-flex; align-items: baseline; }
+.wordmark .path { color: var(--kryl-muted); }
+.wordmark i { display: inline-block; width: 0.42em; height: 0.78em; margin-left: 0.2em; background: var(--kryl-accent); }
+
+h1 { margin-top: 84px; font-weight: 800; font-size: 86px; line-height: 1.04; letter-spacing: -0.055em; }
+h1 em { font-style: normal; color: var(--kryl-accent); }
+.lede { margin-top: 32px; color: var(--kryl-muted); font-size: 29px; line-height: 1.5; }
+.lede b { color: var(--kryl-fg); font-weight: 400; }
+
+.panel { margin-top: 60px; padding: 28px 32px 8px; background: var(--kryl-surface); border: 2px solid var(--kryl-border); border-radius: 10px; }
+.bar { display: flex; gap: 14px; align-items: center; }
+.input { flex: 1; padding: 14px 20px; color: var(--kryl-muted); font-size: 23px; background: var(--kryl-bg); border: 2px solid var(--kryl-border); border-radius: 7px; }
+.chip { padding: 14px 22px; font-size: 23px; font-weight: 700; line-height: 1.5; color: var(--kryl-muted); background: var(--kryl-bg); border: 2px solid var(--kryl-border); border-radius: 7px; }
+.chip.on { color: var(--kryl-bg); background: var(--kryl-accent); border-color: var(--kryl-accent); }
+
+h2 { margin: 34px 0 6px; font-size: 25px; font-weight: 700; }
+h2 span { color: var(--kryl-muted); }
+h2 .count { margin-left: 16px; font-weight: 400; font-size: 21px; }
+ol { list-style: none; padding: 0; counter-reset: row; }
+li { counter-increment: row; display: grid; grid-template-columns: 48px 1fr auto; gap: 20px; align-items: baseline; padding: 19px 4px; border-top: 2px solid var(--kryl-border); }
+li::before { content: counter(row, decimal-leading-zero); color: var(--kryl-muted); font-size: 21px; }
+.sites { display: flex; align-items: baseline; gap: 16px; font-size: 27px; }
+.sites b { font-weight: 700; }
+.or { color: var(--kryl-muted); font-size: 21px; }
+.mirror { padding: 0 9px; font-size: 19px; line-height: 30px; color: var(--kryl-muted); border: 2px solid var(--kryl-border); border-radius: 5px; }
+.tags { color: var(--kryl-muted); font-size: 20px; white-space: nowrap; }
+.tags b { color: var(--kryl-fg); font-weight: 700; }
+
+footer { margin-top: auto; display: flex; align-items: baseline; justify-content: space-between; }
+.url { font-weight: 800; font-size: 44px; letter-spacing: -0.04em; color: var(--kryl-accent); }
+.facts { color: var(--kryl-muted); font-size: 23px; }
+</style>
+</head>
+<body>
+<span class="wordmark"><span class="path">~/</span>streams<i></i></span>
+
+<h1>70 streaming sites.<br><em>one page.</em></h1>
+<p class="lede">movies / tv / anime. every aggregator worth opening,<br><b>with its mirrors</b> — search it, or filter to 4K.</p>
+
+<div class="panel">
+  <div class="bar">
+    <span class="input">filter by name or tag…</span>
+    <span class="chip on">4K</span>
+    <span class="chip">Auto-Next</span>
+  </div>
+  <h2><span>~/</span>top picks<span class="count">2</span></h2>
+  <ol>
+    <li><div class="sites"><b>Rive</b><span class="mirror">2</span><span class="or">or</span>CorsFlix<span class="mirror">2</span><span class="mirror">3</span></div><div class="tags">Auto-Next · <b>4K</b></div></li>
+    <li><div class="sites"><b>67Movies</b><span class="or">or</span>PhantomFlix</div><div class="tags">Auto-Next · <b>4K</b></div></li>
+  </ol>
+  <h2><span>~/</span>recommended<span class="count">2</span></h2>
+  <ol>
+    <li><div class="sites"><b>Stellar</b></div><div class="tags">Auto-Next · <b>4K</b></div></li>
+    <li><div class="sites"><b>Way2Movies</b><span class="mirror">2</span></div><div class="tags"><b>4K</b></div></li>
+  </ol>
+</div>
+
+<footer>
+  <span class="url">streams.kryl.dev</span>
+  <span class="facts">109 links · no sign-up</span>
+</footer>
+</body>
+</html>
